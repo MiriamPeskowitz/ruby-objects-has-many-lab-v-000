@@ -16,9 +16,11 @@ class Artist #what's the goal: compile  an Artists' songs, all of them
   def songs
     @songs
   end
+  
   def add_song(song)
+    song.artist = self
     @songs<<song # add song into the array (self.songs vs @songs -- ask about this) self - adele lets adele know abt the song
-    song.artist = self #self referes to the artist I'M NOT SURE what the .artist is/comes from.
+     #self referes to the artist I'M NOT SURE what the .artist is/comes from.
     @@song_count += 1
   end
 
