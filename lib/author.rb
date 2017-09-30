@@ -2,7 +2,7 @@ require 'pry'
 
 class Author
   attr_accessor :name
-  @@post
+  @@posts
 
   def initialize(name)
     @name = name
@@ -16,7 +16,7 @@ class Author
   def add_post(post)
     @posts << post
     post.author = self
-      @@posts += 1
+    @@posts += 1
   end
 
   def add_post_by_title(title)
