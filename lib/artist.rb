@@ -16,7 +16,7 @@ class Artist #what's the goal: compile  an Artists' songs, all of them
   def songs
     @songs
   end
-  
+
   def add_song(song)
     song.artist = self
     @songs<<song # add song into the array (self.songs vs @songs -- ask about this) self - adele lets adele know abt the song
@@ -28,7 +28,6 @@ class Artist #what's the goal: compile  an Artists' songs, all of them
     song = Song.new(name)
     song.artist = self
     @songs<<song
-
     @@song_count += 1
     #adele.songs.last.name
   end
