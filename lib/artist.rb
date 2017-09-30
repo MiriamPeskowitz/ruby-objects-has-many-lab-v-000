@@ -5,10 +5,8 @@ class Artist #what's the goal: compile  an Artists' songs, all of them
   @@song_count = 0
 
   def initialize(name)
-
     @name = name
     @songs = []
-
   end
 
   def name
